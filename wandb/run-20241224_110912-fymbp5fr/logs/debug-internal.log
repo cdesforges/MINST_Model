@@ -1,0 +1,27 @@
+{"time":"2024-12-24T11:09:12.870261-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T11:09:12.870292-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241224_110912-fymbp5fr/logs/debug-core.log"}
+{"time":"2024-12-24T11:09:12.983883-08:00","level":"INFO","msg":"created new stream","id":"fymbp5fr"}
+{"time":"2024-12-24T11:09:12.983948-08:00","level":"INFO","msg":"stream: started","id":"fymbp5fr"}
+{"time":"2024-12-24T11:09:12.98396-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"fymbp5fr"}
+{"time":"2024-12-24T11:09:12.984005-08:00","level":"INFO","msg":"sender: started","stream_id":"fymbp5fr"}
+{"time":"2024-12-24T11:09:12.98401-08:00","level":"INFO","msg":"handler: started","stream_id":"fymbp5fr"}
+{"time":"2024-12-24T11:09:13.316954-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T11:09:13.397816-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:09:13.415513-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T11:09:13.417192-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:09:13.432346-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T11:09:13.444915-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:09:13.461139-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T11:09:13.46399-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:09:13.480835-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T11:09:13.482471-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:09:13.498502-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T11:12:39.774743-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-24T11:12:39.775153-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-24T11:12:40.605686-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-24T11:12:40.782773-08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 45-47, summary, console lines 190-192","runtime_seconds":0.176428083}],"total_operations":1}}
+{"time":"2024-12-24T11:12:41.878996-08:00","level":"INFO","msg":"stream: closing","id":"fymbp5fr"}
+{"time":"2024-12-24T11:12:41.879033-08:00","level":"INFO","msg":"handler: closed","stream_id":"fymbp5fr"}
+{"time":"2024-12-24T11:12:41.87905-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fymbp5fr"}
+{"time":"2024-12-24T11:12:41.879093-08:00","level":"INFO","msg":"sender: closed","stream_id":"fymbp5fr"}
+{"time":"2024-12-24T11:12:41.879982-08:00","level":"INFO","msg":"stream: closed","id":"fymbp5fr"}

@@ -1,0 +1,22 @@
+{"time":"2024-12-25T12:22:21.028917-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-25T12:22:21.028938-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241225_122221-qaqjsjcr/logs/debug-core.log"}
+{"time":"2024-12-25T12:22:21.139501-08:00","level":"INFO","msg":"created new stream","id":"qaqjsjcr"}
+{"time":"2024-12-25T12:22:21.13955-08:00","level":"INFO","msg":"stream: started","id":"qaqjsjcr"}
+{"time":"2024-12-25T12:22:21.139554-08:00","level":"INFO","msg":"handler: started","stream_id":"qaqjsjcr"}
+{"time":"2024-12-25T12:22:21.13958-08:00","level":"INFO","msg":"sender: started","stream_id":"qaqjsjcr"}
+{"time":"2024-12-25T12:22:21.139601-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"qaqjsjcr"}
+{"time":"2024-12-25T12:22:21.610436-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-25T12:22:21.69099-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-25T12:22:21.700655-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-25T12:25:37.817892-08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/cdesforges_wandb/MNIST_Model_CNN/qaqjsjcr/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-12-25T12:25:40.095853-08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/cdesforges_wandb/MNIST_Model_CNN/qaqjsjcr/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-12-25T12:25:44.503288-08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/cdesforges_wandb/MNIST_Model_CNN/qaqjsjcr/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-12-25T12:32:39.11855-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-25T12:32:39.119274-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-25T12:32:39.800188-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-25T12:32:40.051047-08:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-12-25T12:32:41.076394-08:00","level":"INFO","msg":"stream: closing","id":"qaqjsjcr"}
+{"time":"2024-12-25T12:32:41.076414-08:00","level":"INFO","msg":"handler: closed","stream_id":"qaqjsjcr"}
+{"time":"2024-12-25T12:32:41.076424-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qaqjsjcr"}
+{"time":"2024-12-25T12:32:41.076429-08:00","level":"INFO","msg":"sender: closed","stream_id":"qaqjsjcr"}
+{"time":"2024-12-25T12:32:41.076548-08:00","level":"INFO","msg":"stream: closed","id":"qaqjsjcr"}

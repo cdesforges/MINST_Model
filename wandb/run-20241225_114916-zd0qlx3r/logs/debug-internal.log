@@ -1,0 +1,16 @@
+{"time":"2024-12-25T11:49:17.000088-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-25T11:49:17.000112-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241225_114916-zd0qlx3r/logs/debug-core.log"}
+{"time":"2024-12-25T11:49:17.109745-08:00","level":"INFO","msg":"created new stream","id":"zd0qlx3r"}
+{"time":"2024-12-25T11:49:17.109792-08:00","level":"INFO","msg":"stream: started","id":"zd0qlx3r"}
+{"time":"2024-12-25T11:49:17.109829-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"zd0qlx3r"}
+{"time":"2024-12-25T11:49:17.109848-08:00","level":"INFO","msg":"sender: started","stream_id":"zd0qlx3r"}
+{"time":"2024-12-25T11:49:17.109839-08:00","level":"INFO","msg":"handler: started","stream_id":"zd0qlx3r"}
+{"time":"2024-12-25T12:14:19.617699-08:00","level":"INFO","msg":"stream: closing","id":"zd0qlx3r"}
+{"time":"2024-12-25T12:14:19.617801-08:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2024-12-25T12:14:20.172414-08:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2024-12-25T12:14:20.172509-08:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"project /MNIST_Model not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2024-12-25T12:14:20.172991-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-25T12:14:20.173064-08:00","level":"INFO","msg":"handler: closed","stream_id":"zd0qlx3r"}
+{"time":"2024-12-25T12:14:20.173072-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zd0qlx3r"}
+{"time":"2024-12-25T12:14:20.17308-08:00","level":"INFO","msg":"sender: closed","stream_id":"zd0qlx3r"}
+{"time":"2024-12-25T12:14:20.173186-08:00","level":"INFO","msg":"stream: closed","id":"zd0qlx3r"}

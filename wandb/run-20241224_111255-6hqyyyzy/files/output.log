@@ -1,0 +1,167 @@
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="128" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="48" />
+<var name="epochs" type="int" qualifier="builtins" value="100" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x1518d98b0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28dropout1%29%3A Dropout%28p=0.5%2C inplace=Fals...e%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28dropout2%29%3A Dropout%28p=0.5%2C inplace=False%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.0001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-4.4979e%2B01%2C -3.6314e%2B01%2C -2.4818e%2B01%2C -1.2241e-01%2C -5.0165e%2B01%2C%0A         -3.6805e%2B01%2C -8.5459e%2B01%2C  4.2051e%2B01%2C -4.1...-4.7492e%2B01%2C -1.0279e%2B01%2C  3.9232e%2B01%2C -9.2660e%2B01%2C%0A         -4.2278e%2B01%2C -1.0490e%2B02%2C -3.3722e%2B01%2C -2.4868e%2B01%2C -2.3130e%2B01%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="ReduceLROnPlateau" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.ReduceLROnPlateau object at 0x1518b7eb0&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9698" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151ee2490&gt;" isContainer="True" shape="79" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09969633722735298" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x152581160&gt;" isContainer="True" shape="469" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9465" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.1748931758772971" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="128" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="48" />
+<var name="epochs" type="int" qualifier="builtins" value="100" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x1518d98b0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28dropout1%29%3A Dropout%28p=0.5%2C inplace=Fals...e%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28dropout2%29%3A Dropout%28p=0.5%2C inplace=False%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.0001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-4.4979e%2B01%2C -3.6314e%2B01%2C -2.4818e%2B01%2C -1.2241e-01%2C -5.0165e%2B01%2C%0A         -3.6805e%2B01%2C -8.5459e%2B01%2C  4.2051e%2B01%2C -4.1...-4.7492e%2B01%2C -1.0279e%2B01%2C  3.9232e%2B01%2C -9.2660e%2B01%2C%0A         -4.2278e%2B01%2C -1.0490e%2B02%2C -3.3722e%2B01%2C -2.4868e%2B01%2C -2.3130e%2B01%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="ReduceLROnPlateau" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.ReduceLROnPlateau object at 0x1518b7eb0&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9698" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151ee2490&gt;" isContainer="True" shape="79" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09969633722735298" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x152581160&gt;" isContainer="True" shape="469" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9465" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.1748931758772971" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="128" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="48" />
+<var name="epochs" type="int" qualifier="builtins" value="100" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x1518d98b0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28dropout1%29%3A Dropout%28p=0.5%2C inplace=Fals...e%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28dropout2%29%3A Dropout%28p=0.5%2C inplace=False%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.0001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-4.4979e%2B01%2C -3.6314e%2B01%2C -2.4818e%2B01%2C -1.2241e-01%2C -5.0165e%2B01%2C%0A         -3.6805e%2B01%2C -8.5459e%2B01%2C  4.2051e%2B01%2C -4.1...-4.7492e%2B01%2C -1.0279e%2B01%2C  3.9232e%2B01%2C -9.2660e%2B01%2C%0A         -4.2278e%2B01%2C -1.0490e%2B02%2C -3.3722e%2B01%2C -2.4868e%2B01%2C -2.3130e%2B01%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="ReduceLROnPlateau" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.ReduceLROnPlateau object at 0x1518b7eb0&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9698" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151ee2490&gt;" isContainer="True" shape="79" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09969633722735298" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x152581160&gt;" isContainer="True" shape="469" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9465" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.1748931758772971" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="128" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="48" />
+<var name="epochs" type="int" qualifier="builtins" value="100" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x1518d98b0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28dropout1%29%3A Dropout%28p=0.5%2C inplace=Fals...e%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28dropout2%29%3A Dropout%28p=0.5%2C inplace=False%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.0001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-4.4979e%2B01%2C -3.6314e%2B01%2C -2.4818e%2B01%2C -1.2241e-01%2C -5.0165e%2B01%2C%0A         -3.6805e%2B01%2C -8.5459e%2B01%2C  4.2051e%2B01%2C -4.1...-4.7492e%2B01%2C -1.0279e%2B01%2C  3.9232e%2B01%2C -9.2660e%2B01%2C%0A         -4.2278e%2B01%2C -1.0490e%2B02%2C -3.3722e%2B01%2C -2.4868e%2B01%2C -2.3130e%2B01%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="ReduceLROnPlateau" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.ReduceLROnPlateau object at 0x1518b7eb0&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9698" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151ee2490&gt;" isContainer="True" shape="79" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09969633722735298" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x152581160&gt;" isContainer="True" shape="469" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9465" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.1748931758772971" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="128" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="48" />
+<var name="epochs" type="int" qualifier="builtins" value="100" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x1518d98b0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28dropout1%29%3A Dropout%28p=0.5%2C inplace=Fals...e%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28dropout2%29%3A Dropout%28p=0.5%2C inplace=False%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-4.4979e%2B01%2C -3.6314e%2B01%2C -2.4818e%2B01%2C -1.2241e-01%2C -5.0165e%2B01%2C%0A         -3.6805e%2B01%2C -8.5459e%2B01%2C  4.2051e%2B01%2C -4.1...-4.7492e%2B01%2C -1.0279e%2B01%2C  3.9232e%2B01%2C -9.2660e%2B01%2C%0A         -4.2278e%2B01%2C -1.0490e%2B02%2C -3.3722e%2B01%2C -2.4868e%2B01%2C -2.3130e%2B01%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="ReduceLROnPlateau" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.ReduceLROnPlateau object at 0x1445cfdc0&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9698" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151978fd0&gt;" isContainer="True" shape="79" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09969633722735298" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151978b50&gt;" isContainer="True" shape="469" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9465" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.1748931758772971" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+epoch 1 of 100: training_loss = 0.7757, training_accuracy = 0.7486, test_loss = 0.2861, test_accuracy = 0.9166, lr_size = 0.0010000000
+epoch 2 of 100: training_loss = 0.4603, training_accuracy = 0.8621, test_loss = 0.2237, test_accuracy = 0.9324, lr_size = 0.0010000000
+epoch 3 of 100: training_loss = 0.3984, training_accuracy = 0.8825, test_loss = 0.1931, test_accuracy = 0.9416, lr_size = 0.0010000000
+epoch 4 of 100: training_loss = 0.3686, training_accuracy = 0.8908, test_loss = 0.1828, test_accuracy = 0.9446, lr_size = 0.0010000000
+epoch 5 of 100: training_loss = 0.3511, training_accuracy = 0.8938, test_loss = 0.1813, test_accuracy = 0.9446, lr_size = 0.0010000000
+epoch 6 of 100: training_loss = 0.3339, training_accuracy = 0.9003, test_loss = 0.1596, test_accuracy = 0.9526, lr_size = 0.0010000000
+epoch 7 of 100: training_loss = 0.3213, training_accuracy = 0.9028, test_loss = 0.1586, test_accuracy = 0.9511, lr_size = 0.0010000000
+epoch 8 of 100: training_loss = 0.3112, training_accuracy = 0.9067, test_loss = 0.1473, test_accuracy = 0.9540, lr_size = 0.0010000000
+epoch 9 of 100: training_loss = 0.3052, training_accuracy = 0.9091, test_loss = 0.1444, test_accuracy = 0.9557, lr_size = 0.0010000000
+epoch 10 of 100: training_loss = 0.2970, training_accuracy = 0.9104, test_loss = 0.1451, test_accuracy = 0.9571, lr_size = 0.0010000000
+epoch 11 of 100: training_loss = 0.2952, training_accuracy = 0.9099, test_loss = 0.1556, test_accuracy = 0.9525, lr_size = 0.0010000000
+epoch 12 of 100: training_loss = 0.2852, training_accuracy = 0.9160, test_loss = 0.1352, test_accuracy = 0.9579, lr_size = 0.0010000000
+epoch 13 of 100: training_loss = 0.2826, training_accuracy = 0.9156, test_loss = 0.1428, test_accuracy = 0.9571, lr_size = 0.0010000000
+epoch 14 of 100: training_loss = 0.2848, training_accuracy = 0.9149, test_loss = 0.1415, test_accuracy = 0.9561, lr_size = 0.0010000000
+epoch 15 of 100: training_loss = 0.2728, training_accuracy = 0.9183, test_loss = 0.1361, test_accuracy = 0.9587, lr_size = 0.0010000000
+epoch 16 of 100: training_loss = 0.2766, training_accuracy = 0.9180, test_loss = 0.1319, test_accuracy = 0.9596, lr_size = 0.0010000000
+epoch 17 of 100: training_loss = 0.2674, training_accuracy = 0.9190, test_loss = 0.1363, test_accuracy = 0.9593, lr_size = 0.0010000000
+epoch 18 of 100: training_loss = 0.2660, training_accuracy = 0.9198, test_loss = 0.1366, test_accuracy = 0.9579, lr_size = 0.0010000000
+epoch 19 of 100: training_loss = 0.2699, training_accuracy = 0.9182, test_loss = 0.1347, test_accuracy = 0.9583, lr_size = 0.0010000000
+epoch 20 of 100: training_loss = 0.2645, training_accuracy = 0.9199, test_loss = 0.1281, test_accuracy = 0.9596, lr_size = 0.0010000000
+epoch 21 of 100: training_loss = 0.2614, training_accuracy = 0.9220, test_loss = 0.1309, test_accuracy = 0.9612, lr_size = 0.0010000000
+epoch 22 of 100: training_loss = 0.2530, training_accuracy = 0.9227, test_loss = 0.1228, test_accuracy = 0.9620, lr_size = 0.0010000000

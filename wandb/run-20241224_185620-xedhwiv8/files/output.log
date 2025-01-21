@@ -1,0 +1,12 @@
+epoch 1 of 50: training_loss = 0.3973, training_accuracy = 0.8754, test_loss = 0.1756, test_accuracy = 0.9448, lr_size = 0.0010000000
+epoch 2 of 50: training_loss = 0.2435, training_accuracy = 0.9263, test_loss = 0.1425, test_accuracy = 0.9581, lr_size = 0.0010000000
+epoch 3 of 50: training_loss = 0.2224, training_accuracy = 0.9336, test_loss = 0.1246, test_accuracy = 0.9628, lr_size = 0.0010000000
+epoch 4 of 50: training_loss = 0.2145, training_accuracy = 0.9367, test_loss = 0.1313, test_accuracy = 0.9615, lr_size = 0.0010000000
+epoch 5 of 50: training_loss = 0.2027, training_accuracy = 0.9400, test_loss = 0.1376, test_accuracy = 0.9588, lr_size = 0.0010000000
+epoch 6 of 50: training_loss = 0.2007, training_accuracy = 0.9397, test_loss = 0.1143, test_accuracy = 0.9657, lr_size = 0.0010000000
+epoch 7 of 50: training_loss = 0.1964, training_accuracy = 0.9408, test_loss = 0.1525, test_accuracy = 0.9578, lr_size = 0.0010000000
+epoch 8 of 50: training_loss = 0.1961, training_accuracy = 0.9417, test_loss = 0.1210, test_accuracy = 0.9643, lr_size = 0.0010000000
+epoch 9 of 50: training_loss = 0.1947, training_accuracy = 0.9412, test_loss = 0.1220, test_accuracy = 0.9632, lr_size = 0.0010000000
+epoch 10 of 50: training_loss = 0.1936, training_accuracy = 0.9411, test_loss = 0.1274, test_accuracy = 0.9622, lr_size = 0.0010000000
+epoch 11 of 50: training_loss = 0.1898, training_accuracy = 0.9428, test_loss = 0.1312, test_accuracy = 0.9597, lr_size = 0.0010000000
+epoch 12 of 50: training_loss = 0.1892, training_accuracy = 0.9435, test_loss = 0.1192, test_accuracy = 0.9656, lr_size = 0.0010000000

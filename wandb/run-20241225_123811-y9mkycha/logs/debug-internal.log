@@ -1,0 +1,19 @@
+{"time":"2024-12-25T12:38:11.790271-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-25T12:38:11.790317-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241225_123811-y9mkycha/logs/debug-core.log"}
+{"time":"2024-12-25T12:38:11.898866-08:00","level":"INFO","msg":"created new stream","id":"y9mkycha"}
+{"time":"2024-12-25T12:38:11.898909-08:00","level":"INFO","msg":"stream: started","id":"y9mkycha"}
+{"time":"2024-12-25T12:38:11.898917-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"y9mkycha"}
+{"time":"2024-12-25T12:38:11.89892-08:00","level":"INFO","msg":"handler: started","stream_id":"y9mkycha"}
+{"time":"2024-12-25T12:38:11.898949-08:00","level":"INFO","msg":"sender: started","stream_id":"y9mkycha"}
+{"time":"2024-12-25T12:38:12.289675-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-25T12:38:12.407386-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-25T12:38:12.419647-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-25T12:43:46.651807-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-25T12:43:46.65219-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-25T12:43:47.409315-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-25T12:43:47.664408-08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 50-50","runtime_seconds":0.254772458}],"total_operations":1}}
+{"time":"2024-12-25T12:43:48.698303-08:00","level":"INFO","msg":"stream: closing","id":"y9mkycha"}
+{"time":"2024-12-25T12:43:48.698332-08:00","level":"INFO","msg":"handler: closed","stream_id":"y9mkycha"}
+{"time":"2024-12-25T12:43:48.698341-08:00","level":"INFO","msg":"sender: closed","stream_id":"y9mkycha"}
+{"time":"2024-12-25T12:43:48.698339-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"y9mkycha"}
+{"time":"2024-12-25T12:43:48.698552-08:00","level":"INFO","msg":"stream: closed","id":"y9mkycha"}

@@ -1,0 +1,98 @@
+{"time":"2024-12-24T07:57:46.586916-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T07:57:46.586943-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241224_075746-7wqi74mm/logs/debug-core.log"}
+{"time":"2024-12-24T07:57:46.903911-08:00","level":"INFO","msg":"created new stream","id":"7wqi74mm"}
+{"time":"2024-12-24T07:57:46.903957-08:00","level":"INFO","msg":"stream: started","id":"7wqi74mm"}
+{"time":"2024-12-24T07:57:46.908099-08:00","level":"INFO","msg":"handler: started","stream_id":"7wqi74mm"}
+{"time":"2024-12-24T07:57:46.908152-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"7wqi74mm"}
+{"time":"2024-12-24T07:57:46.908304-08:00","level":"INFO","msg":"sender: started","stream_id":"7wqi74mm"}
+{"time":"2024-12-24T07:57:47.323831-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T07:57:47.415865-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:08:30.391945-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:08:30.393303-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:11:18.868659-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:11:38.649022-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:11:44.628362-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:11:51.250861-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:17:44.722777-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:17:44.727985-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:39:25.783633-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:39:25.7855-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:41:45.360215-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:41:45.382843-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:42:03.480217-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:42:03.482247-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:42:06.417384-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:42:06.419326-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:42:09.082823-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:42:09.224899-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:43:22.166509-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:43:22.167675-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:43:23.904291-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:43:23.925341-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:43:25.477257-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:43:25.480571-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:43:27.16012-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:43:27.161611-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:43:29.383808-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:44:35.755822-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:45:03.806335-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:45:06.189938-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:45:31.131237-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:45:56.833127-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:48:09.200033-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:48:09.201445-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:48:11.977407-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:48:13.767455-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:49:08.40969-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:49:10.404625-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:49:13.139869-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:49:13.141494-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:49:15.355897-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:49:42.674065-08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/cdesforgescine-pasadena-city-college/MINST_Model/7wqi74mm/file_stream\": read tcp 192.168.10.192:53795->35.186.228.49:443: read: operation timed out"}
+{"time":"2024-12-24T08:50:54.679499-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:51:24.855847-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:51:24.857846-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:51:39.884037-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:55:27.937737-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:55:34.135276-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:55:34.137301-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:55:36.872017-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:57:08.731506-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T08:57:33.396498-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T08:58:22.218056-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:03:24.922158-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:03:28.928433-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:04:57.590109-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:07:29.880644-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:08:32.255689-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:08:32.257571-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:08:34.834011-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:08:51.820651-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:09:39.187503-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:12:02.750907-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:15:30.371919-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:15:30.373455-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:15:34.236461-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:15:34.237002-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:15:35.509932-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:15:35.518263-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:15:38.225342-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:15:38.226589-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:15:41.075109-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:15:41.092163-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:15:42.342329-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:15:42.344852-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:15:45.618361-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:15:45.619765-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:16:30.567182-08:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/cdesforgescine-pasadena-city-college/MINST_Model/7wqi74mm/file_stream"}
+{"time":"2024-12-24T09:16:30.567593-08:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/cdesforgescine-pasadena-city-college/MINST_Model/7wqi74mm/file_stream: {\"error\":\"project cdesforgescine-pasadena-city-college/MINST_Model not found while streaming file\"}"}
+{"time":"2024-12-24T09:16:32.591497-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:21:37.540903-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-24T09:21:37.54134-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-24T09:21:38.425033-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-24T09:21:38.426803-08:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-12-24T09:21:39.449154-08:00","level":"INFO","msg":"stream: closing","id":"7wqi74mm"}
+{"time":"2024-12-24T09:21:39.449238-08:00","level":"INFO","msg":"handler: closed","stream_id":"7wqi74mm"}
+{"time":"2024-12-24T09:21:39.449289-08:00","level":"INFO","msg":"sender: closed","stream_id":"7wqi74mm"}
+{"time":"2024-12-24T09:21:39.449258-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7wqi74mm"}
+{"time":"2024-12-24T09:21:39.449429-08:00","level":"INFO","msg":"stream: closed","id":"7wqi74mm"}

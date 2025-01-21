@@ -1,0 +1,238 @@
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1443edf40&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1443edb80&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1443edf40&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1443edb80&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1443edf40&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1443edb80&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14443b9a0&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1445b3a60&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14443b9a0&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1445b3a60&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14443b9a0&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1445b3a60&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14443b9a0&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1445b3a60&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14443b9a0&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1445b3a60&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14443b9a0&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1445b3a60&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14449f610&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14449fd90&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="6" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="9" />
+<var name="epochs" type="int" qualifier="builtins" value="30" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9612" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14449f610&gt;" isContainer="True" shape="1667" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.03777323032957918" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x14449fd90&gt;" isContainer="True" shape="10000" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.9776166666666667" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.01574679772827686" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+epoch 1 of 30: training_loss = 0.0510, training_accuracy = 5.4294, test_loss = 0.0314, test_accuracy = 5.6431
+epoch 2 of 30: training_loss = 0.0289, training_accuracy = 5.6801, test_loss = 0.0271, test_accuracy = 5.6947
+epoch 3 of 30: training_loss = 0.0237, training_accuracy = 5.7422, test_loss = 0.0233, test_accuracy = 5.7564
+epoch 4 of 30: training_loss = 0.0214, training_accuracy = 5.7672, test_loss = 0.0273, test_accuracy = 5.7283
+epoch 5 of 30: training_loss = 0.0199, training_accuracy = 5.7857, test_loss = 0.0280, test_accuracy = 5.7079
+epoch 6 of 30: training_loss = 0.0188, training_accuracy = 5.8032, test_loss = 0.0274, test_accuracy = 5.7277
+epoch 7 of 30: training_loss = 0.0181, training_accuracy = 5.8123, test_loss = 0.0284, test_accuracy = 5.7427

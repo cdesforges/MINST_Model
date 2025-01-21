@@ -1,0 +1,39 @@
+{"time":"2024-12-24T09:29:49.174243-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T09:29:49.174268-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241224_092949-6l4dtixf/logs/debug-core.log"}
+{"time":"2024-12-24T09:29:49.285096-08:00","level":"INFO","msg":"created new stream","id":"6l4dtixf"}
+{"time":"2024-12-24T09:29:49.285137-08:00","level":"INFO","msg":"stream: started","id":"6l4dtixf"}
+{"time":"2024-12-24T09:29:49.285166-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"6l4dtixf"}
+{"time":"2024-12-24T09:29:49.285181-08:00","level":"INFO","msg":"handler: started","stream_id":"6l4dtixf"}
+{"time":"2024-12-24T09:29:49.285231-08:00","level":"INFO","msg":"sender: started","stream_id":"6l4dtixf"}
+{"time":"2024-12-24T09:29:49.616971-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T09:29:49.689214-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:29:49.699234-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:29:49.699993-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:29:49.70765-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:29:49.719969-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:29:49.72962-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:29:49.732528-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:29:49.744442-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:29:49.745475-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:30:00.904149-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:30:00.905399-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:30:00.916803-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:30:00.922963-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:30:00.934502-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:30:00.935618-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:30:00.954806-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:30:00.96549-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:30:00.973804-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:30:00.976663-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:30:00.986468-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:30:00.987469-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T09:30:00.997123-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T09:31:17.726194-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-24T09:31:17.726588-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-24T09:31:18.520269-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-24T09:31:18.73257-08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 6-6, summary, console lines 237-237","runtime_seconds":0.211826167}],"total_operations":1}}
+{"time":"2024-12-24T09:31:19.763908-08:00","level":"INFO","msg":"stream: closing","id":"6l4dtixf"}
+{"time":"2024-12-24T09:31:19.763934-08:00","level":"INFO","msg":"handler: closed","stream_id":"6l4dtixf"}
+{"time":"2024-12-24T09:31:19.763943-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6l4dtixf"}
+{"time":"2024-12-24T09:31:19.763949-08:00","level":"INFO","msg":"sender: closed","stream_id":"6l4dtixf"}
+{"time":"2024-12-24T09:31:19.764057-08:00","level":"INFO","msg":"stream: closed","id":"6l4dtixf"}

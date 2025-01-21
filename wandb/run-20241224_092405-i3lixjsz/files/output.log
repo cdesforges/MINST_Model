@@ -1,0 +1,9 @@
+epoch 1 of 30: training_loss = 0.0146, training_accuracy = 0.9770, test_loss = 0.0363, test_accuracy = 0.9641
+epoch 2 of 30: training_loss = 0.0150, training_accuracy = 0.9772, test_loss = 0.0385, test_accuracy = 0.9599
+epoch 3 of 30: training_loss = 0.0148, training_accuracy = 0.9779, test_loss = 0.0291, test_accuracy = 0.9688
+epoch 4 of 30: training_loss = 0.0149, training_accuracy = 0.9774, test_loss = 0.0449, test_accuracy = 0.9650
+epoch 5 of 30: training_loss = 0.0152, training_accuracy = 0.9779, test_loss = 0.0378, test_accuracy = 0.9657
+epoch 6 of 30: training_loss = 0.0140, training_accuracy = 0.9788, test_loss = 0.0373, test_accuracy = 0.9645
+epoch 7 of 30: training_loss = 0.0147, training_accuracy = 0.9790, test_loss = 0.0443, test_accuracy = 0.9615
+epoch 8 of 30: training_loss = 0.0150, training_accuracy = 0.9776, test_loss = 0.0394, test_accuracy = 0.9597
+epoch 9 of 30: training_loss = 0.0157, training_accuracy = 0.9776, test_loss = 0.0378, test_accuracy = 0.9612

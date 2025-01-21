@@ -1,0 +1,445 @@
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="64" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="5" />
+<var name="epochs" type="int" qualifier="builtins" value="300" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x151a973d0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    initial_lr%3A 0.001%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-2.0144e%2B01%2C -1.4634e%2B01%2C -2.0135e%2B01%2C -2.4144e%2B00%2C -6.4186e%2B00%2C%0A         -1.4919e%2B01%2C -2.3974e%2B01%2C  1.2481e%2B01%2C -1.4...-6.7164e%2B00%2C -2.0161e%2B00%2C  1.9621e%2B01%2C -2.1786e%2B01%2C%0A         -1.2111e%2B01%2C -4.2006e%2B01%2C -1.0869e%2B01%2C -8.1889e%2B00%2C -9.6870e%2B00%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 3%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="StepLR" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.StepLR object at 0x151f4ff40&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9701" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151b9efd0&gt;" isContainer="True" shape="157" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09364786785975347" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151b9e280&gt;" isContainer="True" shape="938" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.97305" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.08612980958727647" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="64" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="5" />
+<var name="epochs" type="int" qualifier="builtins" value="300" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x151a973d0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    initial_lr%3A 0.001%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-2.0144e%2B01%2C -1.4634e%2B01%2C -2.0135e%2B01%2C -2.4144e%2B00%2C -6.4186e%2B00%2C%0A         -1.4919e%2B01%2C -2.3974e%2B01%2C  1.2481e%2B01%2C -1.4...-6.7164e%2B00%2C -2.0161e%2B00%2C  1.9621e%2B01%2C -2.1786e%2B01%2C%0A         -1.2111e%2B01%2C -4.2006e%2B01%2C -1.0869e%2B01%2C -8.1889e%2B00%2C -9.6870e%2B00%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 3%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="StepLR" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.StepLR object at 0x151f4ff40&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9701" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151b9efd0&gt;" isContainer="True" shape="157" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09364786785975347" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151b9e280&gt;" isContainer="True" shape="938" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.97305" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.08612980958727647" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="64" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="5" />
+<var name="epochs" type="int" qualifier="builtins" value="300" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x151a973d0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    initial_lr%3A 0.001%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-2.0144e%2B01%2C -1.4634e%2B01%2C -2.0135e%2B01%2C -2.4144e%2B00%2C -6.4186e%2B00%2C%0A         -1.4919e%2B01%2C -2.3974e%2B01%2C  1.2481e%2B01%2C -1.4...-6.7164e%2B00%2C -2.0161e%2B00%2C  1.9621e%2B01%2C -2.1786e%2B01%2C%0A         -1.2111e%2B01%2C -4.2006e%2B01%2C -1.0869e%2B01%2C -8.1889e%2B00%2C -9.6870e%2B00%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 3%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="StepLR" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.StepLR object at 0x151f4ff40&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9701" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151b9efd0&gt;" isContainer="True" shape="157" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09364786785975347" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151b9e280&gt;" isContainer="True" shape="938" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.97305" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.08612980958727647" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="64" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="5" />
+<var name="epochs" type="int" qualifier="builtins" value="300" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x151a973d0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    initial_lr%3A 0.001%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-2.0144e%2B01%2C -1.4634e%2B01%2C -2.0135e%2B01%2C -2.4144e%2B00%2C -6.4186e%2B00%2C%0A         -1.4919e%2B01%2C -2.3974e%2B01%2C  1.2481e%2B01%2C -1.4...-6.7164e%2B00%2C -2.0161e%2B00%2C  1.9621e%2B01%2C -2.1786e%2B01%2C%0A         -1.2111e%2B01%2C -4.2006e%2B01%2C -1.0869e%2B01%2C -8.1889e%2B00%2C -9.6870e%2B00%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 3%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="StepLR" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.StepLR object at 0x151a8d280&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9701" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151a8ddc0&gt;" isContainer="True" shape="157" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09364786785975347" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1518e4160&gt;" isContainer="True" shape="938" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.97305" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.08612980958727647" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+<xml><var name="_dummy_ipython_val"  />
+<var name="_dummy_special_var"  />
+<var name="MNIST_model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="batch_size" type="int" qualifier="builtins" value="64" />
+<var name="criterion" type="CrossEntropyLoss" qualifier="torch.nn.modules.loss" value="CrossEntropyLoss%28%29" isContainer="True" />
+<var name="epoch" type="int" qualifier="builtins" value="5" />
+<var name="epochs" type="int" qualifier="builtins" value="300" />
+<var name="example_data" type="Tensor" qualifier="torch" value="tensor%28%5B%5B%5B%5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ......%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%2C%0A          %5B-1.%2C -1.%2C -1.%2C  ...%2C -1.%2C -1.%2C -1.%5D%5D%5D%5D%29" isContainer="True" shape="(64, 1, 28, 28)" />
+<var name="example_labels" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 2%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="examples" type="_SingleProcessDataLoaderIter" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader._SingleProcessDataLoaderIter object at 0x151a973d0&gt;" isContainer="True" shape="157" />
+<var name="fig" type="Figure" qualifier="matplotlib.figure" value="%3CFigure size 640x480 with 6 Axes&gt;" isContainer="True" />
+<var name="hidden_size" type="int" qualifier="builtins" value="128" />
+<var name="i" type="int" qualifier="builtins" value="5" />
+<var name="learning_rate" type="float" qualifier="builtins" value="0.001" />
+<var name="model" type="MLP" qualifier="__main__" value="MLP%28%0A  %28fc1%29%3A Linear%28in_features=784%2C out_features=128%2C bias=True%29%0A  %28relu1%29%3A ReLU%28%29%0A  %28fc2%29%3A Linear%28in_features=128%2C out_features=128%2C bias=True%29%0A  %28relu2%29%3A ReLU%28%29%0A  %28fc3%29%3A Linear%28in_features=128%2C out_features=10%2C bias=True%29%0A%29" isContainer="True" />
+<var name="optimizer" type="Adam" qualifier="torch.optim.adam" value="Adam %28%0AParameter Group 0%0A    amsgrad%3A False%0A    betas%3A %280.9%2C 0.999%29%0A    capturable%3A False%0A    differentiable%3A False%0A    eps%3A 1e-08%0A    foreach%3A None%0A    fused%3A None%0A    initial_lr%3A 0.001%0A    lr%3A 0.001%0A    maximize%3A False%0A    weight_decay%3A 0%0A%29" isContainer="True" />
+<var name="outputs" type="Tensor" qualifier="torch" value="tensor%28%5B%5B-2.0144e%2B01%2C -1.4634e%2B01%2C -2.0135e%2B01%2C -2.4144e%2B00%2C -6.4186e%2B00%2C%0A         -1.4919e%2B01%2C -2.3974e%2B01%2C  1.2481e%2B01%2C -1.4...-6.7164e%2B00%2C -2.0161e%2B00%2C  1.9621e%2B01%2C -2.1786e%2B01%2C%0A         -1.2111e%2B01%2C -4.2006e%2B01%2C -1.0869e%2B01%2C -8.1889e%2B00%2C -9.6870e%2B00%5D%5D%29" isContainer="True" shape="(64, 10)" />
+<var name="pred" type="Tensor" qualifier="torch" value="tensor%28%5B7%2C 2%2C 1%2C 0%2C 4%2C 1%2C 4%2C 9%2C 5%2C 9%2C 0%2C 6%2C 9%2C 0%2C 1%2C 5%2C 9%2C 7%2C 3%2C 4%2C 9%2C 6%2C 6%2C 5%2C%0A        4%2C 0%2C 7%2C 4%2C 0%2C 1%2C 3%2C 1%2C 3%2C 4%2C 7%2C 2%2C 7%2C 1%2C 3%2C 1%2C 1%2C 7%2C 4%2C 2%2C 3%2C 5%2C 1%2C 2%2C%0A        4%2C 4%2C 6%2C 3%2C 5%2C 5%2C 6%2C 0%2C 4%2C 1%2C 9%2C 5%2C 7%2C 8%2C 9%2C 3%5D%29" isContainer="True" shape="(64,)" />
+<var name="scheduler" type="StepLR" qualifier="torch.optim.lr_scheduler" value="%3Ctorch.optim.lr_scheduler.StepLR object at 0x151a8d280&gt;" isContainer="True" />
+<var name="test_acc" type="float" qualifier="builtins" value="0.9701" />
+<var name="test_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 10000%0A    Root location%3A ./data%0A    Split%3A Test%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="10000" />
+<var name="test_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x151a8ddc0&gt;" isContainer="True" shape="157" />
+<var name="test_loss" type="float" qualifier="builtins" value="0.09364786785975347" />
+<var name="train_dataset" type="MNIST" qualifier="torchvision.datasets.mnist" value="Dataset MNIST%0A    Number of datapoints%3A 60000%0A    Root location%3A ./data%0A    Split%3A Train%0A    StandardTransform%0ATransform%3A Compose%28%0A               ToTensor%28%29%0A               Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A           %29" isContainer="True" shape="60000" />
+<var name="train_loader" type="DataLoader" qualifier="torch.utils.data.dataloader" value="%3Ctorch.utils.data.dataloader.DataLoader object at 0x1518e4160&gt;" isContainer="True" shape="938" />
+<var name="training_acc" type="float" qualifier="builtins" value="0.97305" />
+<var name="training_loss" type="float" qualifier="builtins" value="0.08612980958727647" />
+<var name="transform" type="Compose" qualifier="torchvision.transforms.transforms" value="Compose%28%0A    ToTensor%28%29%0A    Normalize%28mean=%280.5%2C%29%2C std=%280.5%2C%29%29%0A%29" isContainer="True" />
+</xml>
+epoch 1 of 300: training_loss = 0.3678, training_accuracy = 0.8904, test_loss = 0.2126, test_accuracy = 0.9355
+epoch 2 of 300: training_loss = 0.1706, training_accuracy = 0.9483, test_loss = 0.1351, test_accuracy = 0.9543
+epoch 3 of 300: training_loss = 0.1236, training_accuracy = 0.9618, test_loss = 0.1194, test_accuracy = 0.9624
+epoch 4 of 300: training_loss = 0.0997, training_accuracy = 0.9691, test_loss = 0.0999, test_accuracy = 0.9687
+epoch 5 of 300: training_loss = 0.0861, training_accuracy = 0.9726, test_loss = 0.0908, test_accuracy = 0.9724
+epoch 6 of 300: training_loss = 0.0749, training_accuracy = 0.9756, test_loss = 0.0945, test_accuracy = 0.9695
+epoch 7 of 300: training_loss = 0.0640, training_accuracy = 0.9801, test_loss = 0.0836, test_accuracy = 0.9737
+epoch 8 of 300: training_loss = 0.0595, training_accuracy = 0.9807, test_loss = 0.1105, test_accuracy = 0.9692
+epoch 9 of 300: training_loss = 0.0528, training_accuracy = 0.9825, test_loss = 0.0930, test_accuracy = 0.9736
+epoch 10 of 300: training_loss = 0.0493, training_accuracy = 0.9834, test_loss = 0.0840, test_accuracy = 0.9746
+epoch 11 of 300: training_loss = 0.0436, training_accuracy = 0.9857, test_loss = 0.0916, test_accuracy = 0.9732
+epoch 12 of 300: training_loss = 0.0413, training_accuracy = 0.9862, test_loss = 0.0788, test_accuracy = 0.9779
+epoch 13 of 300: training_loss = 0.0370, training_accuracy = 0.9878, test_loss = 0.0765, test_accuracy = 0.9787
+epoch 14 of 300: training_loss = 0.0358, training_accuracy = 0.9878, test_loss = 0.0890, test_accuracy = 0.9787
+epoch 15 of 300: training_loss = 0.0342, training_accuracy = 0.9883, test_loss = 0.0842, test_accuracy = 0.9785
+epoch 16 of 300: training_loss = 0.0322, training_accuracy = 0.9892, test_loss = 0.0909, test_accuracy = 0.9777
+epoch 17 of 300: training_loss = 0.0291, training_accuracy = 0.9900, test_loss = 0.0946, test_accuracy = 0.9753
+epoch 18 of 300: training_loss = 0.0255, training_accuracy = 0.9911, test_loss = 0.0993, test_accuracy = 0.9762
+epoch 19 of 300: training_loss = 0.0261, training_accuracy = 0.9907, test_loss = 0.0985, test_accuracy = 0.9744
+epoch 20 of 300: training_loss = 0.0266, training_accuracy = 0.9910, test_loss = 0.1108, test_accuracy = 0.9769
+epoch 21 of 300: training_loss = 0.0084, training_accuracy = 0.9976, test_loss = 0.0783, test_accuracy = 0.9808
+epoch 22 of 300: training_loss = 0.0067, training_accuracy = 0.9979, test_loss = 0.0933, test_accuracy = 0.9793
+epoch 23 of 300: training_loss = 0.0075, training_accuracy = 0.9973, test_loss = 0.1016, test_accuracy = 0.9792
+epoch 24 of 300: training_loss = 0.0079, training_accuracy = 0.9973, test_loss = 0.0937, test_accuracy = 0.9792
+epoch 25 of 300: training_loss = 0.0060, training_accuracy = 0.9982, test_loss = 0.0892, test_accuracy = 0.9805
+epoch 26 of 300: training_loss = 0.0061, training_accuracy = 0.9981, test_loss = 0.1012, test_accuracy = 0.9784
+epoch 27 of 300: training_loss = 0.0060, training_accuracy = 0.9981, test_loss = 0.0835, test_accuracy = 0.9827
+epoch 28 of 300: training_loss = 0.0084, training_accuracy = 0.9970, test_loss = 0.0915, test_accuracy = 0.9817
+epoch 29 of 300: training_loss = 0.0045, training_accuracy = 0.9984, test_loss = 0.0963, test_accuracy = 0.9795
+epoch 30 of 300: training_loss = 0.0065, training_accuracy = 0.9979, test_loss = 0.1003, test_accuracy = 0.9793
+epoch 31 of 300: training_loss = 0.0071, training_accuracy = 0.9977, test_loss = 0.0937, test_accuracy = 0.9840
+epoch 32 of 300: training_loss = 0.0013, training_accuracy = 0.9997, test_loss = 0.0994, test_accuracy = 0.9814
+epoch 33 of 300: training_loss = 0.0102, training_accuracy = 0.9963, test_loss = 0.1038, test_accuracy = 0.9815
+epoch 34 of 300: training_loss = 0.0030, training_accuracy = 0.9990, test_loss = 0.1013, test_accuracy = 0.9805
+epoch 35 of 300: training_loss = 0.0084, training_accuracy = 0.9973, test_loss = 0.1068, test_accuracy = 0.9798
+epoch 36 of 300: training_loss = 0.0037, training_accuracy = 0.9989, test_loss = 0.1033, test_accuracy = 0.9822
+epoch 37 of 300: training_loss = 0.0046, training_accuracy = 0.9986, test_loss = 0.0963, test_accuracy = 0.9822
+epoch 38 of 300: training_loss = 0.0070, training_accuracy = 0.9975, test_loss = 0.1050, test_accuracy = 0.9795
+epoch 39 of 300: training_loss = 0.0048, training_accuracy = 0.9983, test_loss = 0.1085, test_accuracy = 0.9801
+epoch 40 of 300: training_loss = 0.0036, training_accuracy = 0.9990, test_loss = 0.0963, test_accuracy = 0.9836
+epoch 41 of 300: training_loss = 0.0004, training_accuracy = 0.9999, test_loss = 0.0957, test_accuracy = 0.9835
+epoch 42 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.0949, test_accuracy = 0.9834
+epoch 43 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.0964, test_accuracy = 0.9835
+epoch 44 of 300: training_loss = 0.0027, training_accuracy = 0.9991, test_loss = 0.1158, test_accuracy = 0.9819
+epoch 45 of 300: training_loss = 0.0011, training_accuracy = 0.9997, test_loss = 0.1012, test_accuracy = 0.9835
+epoch 46 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.1011, test_accuracy = 0.9835
+epoch 47 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.1032, test_accuracy = 0.9834
+epoch 48 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.1027, test_accuracy = 0.9838
+epoch 49 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.1473, test_accuracy = 0.9787
+epoch 50 of 300: training_loss = 0.0033, training_accuracy = 0.9989, test_loss = 0.1056, test_accuracy = 0.9837
+epoch 51 of 300: training_loss = 0.0002, training_accuracy = 1.0000, test_loss = 0.1017, test_accuracy = 0.9837
+epoch 52 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.1039, test_accuracy = 0.9838
+epoch 53 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1035, test_accuracy = 0.9840
+epoch 54 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1083, test_accuracy = 0.9837
+epoch 55 of 300: training_loss = 0.0026, training_accuracy = 0.9993, test_loss = 0.1177, test_accuracy = 0.9828
+epoch 56 of 300: training_loss = 0.0014, training_accuracy = 0.9995, test_loss = 0.1097, test_accuracy = 0.9835
+epoch 57 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.1105, test_accuracy = 0.9836
+epoch 58 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1107, test_accuracy = 0.9833
+epoch 59 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1112, test_accuracy = 0.9835
+epoch 60 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1125, test_accuracy = 0.9837
+epoch 61 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1131, test_accuracy = 0.9837
+epoch 62 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1148, test_accuracy = 0.9838
+epoch 63 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1156, test_accuracy = 0.9838
+epoch 64 of 300: training_loss = 0.0007, training_accuracy = 0.9998, test_loss = 0.1173, test_accuracy = 0.9837
+epoch 65 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.1170, test_accuracy = 0.9830
+epoch 66 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1149, test_accuracy = 0.9839
+epoch 67 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1155, test_accuracy = 0.9842
+epoch 68 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1155, test_accuracy = 0.9839
+epoch 69 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1166, test_accuracy = 0.9843
+epoch 70 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1166, test_accuracy = 0.9840
+epoch 71 of 300: training_loss = 0.0005, training_accuracy = 0.9998, test_loss = 0.1242, test_accuracy = 0.9828
+epoch 72 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.1162, test_accuracy = 0.9840
+epoch 73 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1156, test_accuracy = 0.9841
+epoch 74 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1163, test_accuracy = 0.9839
+epoch 75 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1169, test_accuracy = 0.9840
+epoch 76 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1178, test_accuracy = 0.9835
+epoch 77 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1189, test_accuracy = 0.9840
+epoch 78 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1189, test_accuracy = 0.9839
+epoch 79 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1212, test_accuracy = 0.9838
+epoch 80 of 300: training_loss = 0.0003, training_accuracy = 0.9999, test_loss = 0.1484, test_accuracy = 0.9804
+epoch 81 of 300: training_loss = 0.0002, training_accuracy = 1.0000, test_loss = 0.1236, test_accuracy = 0.9843
+epoch 82 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1231, test_accuracy = 0.9841
+epoch 83 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1231, test_accuracy = 0.9840
+epoch 84 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1232, test_accuracy = 0.9839
+epoch 85 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1229, test_accuracy = 0.9840
+epoch 86 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1234, test_accuracy = 0.9842
+epoch 87 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1233, test_accuracy = 0.9842
+epoch 88 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1240, test_accuracy = 0.9840
+epoch 89 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1244, test_accuracy = 0.9839
+epoch 90 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1234, test_accuracy = 0.9842
+epoch 91 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1280, test_accuracy = 0.9836
+epoch 92 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1292, test_accuracy = 0.9838
+epoch 93 of 300: training_loss = 0.0001, training_accuracy = 1.0000, test_loss = 0.1280, test_accuracy = 0.9834
+epoch 94 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1276, test_accuracy = 0.9838
+epoch 95 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1283, test_accuracy = 0.9840
+epoch 96 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1301, test_accuracy = 0.9840
+epoch 97 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1291, test_accuracy = 0.9840
+epoch 98 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1317, test_accuracy = 0.9838
+epoch 99 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1320, test_accuracy = 0.9838
+epoch 100 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1345, test_accuracy = 0.9835
+epoch 101 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1352, test_accuracy = 0.9838
+epoch 102 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1345, test_accuracy = 0.9841
+epoch 103 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1368, test_accuracy = 0.9835
+epoch 104 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1382, test_accuracy = 0.9836
+epoch 105 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1388, test_accuracy = 0.9838
+epoch 106 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1407, test_accuracy = 0.9841
+epoch 107 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1403, test_accuracy = 0.9840
+epoch 108 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1416, test_accuracy = 0.9834
+epoch 109 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1429, test_accuracy = 0.9839
+epoch 110 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1444, test_accuracy = 0.9837
+epoch 111 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1453, test_accuracy = 0.9834
+epoch 112 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1441, test_accuracy = 0.9836
+epoch 113 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1456, test_accuracy = 0.9835
+epoch 114 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1470, test_accuracy = 0.9838
+epoch 115 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1506, test_accuracy = 0.9835
+epoch 116 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1501, test_accuracy = 0.9837
+epoch 117 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1496, test_accuracy = 0.9837
+epoch 118 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1518, test_accuracy = 0.9837
+epoch 119 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1529, test_accuracy = 0.9838
+epoch 120 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1532, test_accuracy = 0.9839
+epoch 121 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1536, test_accuracy = 0.9838
+epoch 122 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1543, test_accuracy = 0.9837
+epoch 123 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1555, test_accuracy = 0.9835
+epoch 124 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1564, test_accuracy = 0.9834
+epoch 125 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1570, test_accuracy = 0.9835
+epoch 126 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1566, test_accuracy = 0.9835
+epoch 127 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1571, test_accuracy = 0.9838
+epoch 128 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1568, test_accuracy = 0.9838
+epoch 129 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1583, test_accuracy = 0.9838
+epoch 130 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1593, test_accuracy = 0.9839
+epoch 131 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1595, test_accuracy = 0.9839
+epoch 132 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1604, test_accuracy = 0.9838
+epoch 133 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1608, test_accuracy = 0.9835
+epoch 134 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1606, test_accuracy = 0.9837
+epoch 135 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1616, test_accuracy = 0.9839
+epoch 136 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1624, test_accuracy = 0.9836
+epoch 137 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1625, test_accuracy = 0.9839
+epoch 138 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1631, test_accuracy = 0.9838
+epoch 139 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1640, test_accuracy = 0.9836
+epoch 140 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1649, test_accuracy = 0.9835
+epoch 141 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1648, test_accuracy = 0.9836
+epoch 142 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1656, test_accuracy = 0.9836
+epoch 143 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1654, test_accuracy = 0.9836
+epoch 144 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1661, test_accuracy = 0.9837
+epoch 145 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1660, test_accuracy = 0.9835
+epoch 146 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1664, test_accuracy = 0.9835
+epoch 147 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1667, test_accuracy = 0.9835
+epoch 148 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1666, test_accuracy = 0.9836
+epoch 149 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1674, test_accuracy = 0.9836
+epoch 150 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1676, test_accuracy = 0.9836
+epoch 151 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1680, test_accuracy = 0.9835
+epoch 152 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1681, test_accuracy = 0.9836
+epoch 153 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1679, test_accuracy = 0.9837
+epoch 154 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1684, test_accuracy = 0.9836
+epoch 155 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1688, test_accuracy = 0.9837
+epoch 156 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1688, test_accuracy = 0.9836
+epoch 157 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1690, test_accuracy = 0.9837
+epoch 158 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1694, test_accuracy = 0.9836
+epoch 159 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1697, test_accuracy = 0.9836
+epoch 160 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1698, test_accuracy = 0.9835
+epoch 161 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1701, test_accuracy = 0.9836
+epoch 162 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1703, test_accuracy = 0.9837
+epoch 163 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1704, test_accuracy = 0.9836
+epoch 164 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1705, test_accuracy = 0.9836
+epoch 165 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1706, test_accuracy = 0.9836
+epoch 166 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1708, test_accuracy = 0.9836
+epoch 167 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1709, test_accuracy = 0.9836
+epoch 168 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1711, test_accuracy = 0.9835
+epoch 169 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1711, test_accuracy = 0.9836
+epoch 170 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1712, test_accuracy = 0.9837
+epoch 171 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1714, test_accuracy = 0.9836
+epoch 172 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1718, test_accuracy = 0.9836
+epoch 173 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1719, test_accuracy = 0.9836
+epoch 174 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1716, test_accuracy = 0.9836
+epoch 175 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1719, test_accuracy = 0.9836
+epoch 176 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1721, test_accuracy = 0.9836
+epoch 177 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1723, test_accuracy = 0.9836
+epoch 178 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1724, test_accuracy = 0.9836
+epoch 179 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1724, test_accuracy = 0.9836
+epoch 180 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1724, test_accuracy = 0.9836
+epoch 181 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1727, test_accuracy = 0.9836
+epoch 182 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1727, test_accuracy = 0.9836
+epoch 183 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1727, test_accuracy = 0.9836
+epoch 184 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1728, test_accuracy = 0.9836
+epoch 185 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1730, test_accuracy = 0.9836
+epoch 186 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1730, test_accuracy = 0.9836
+epoch 187 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1730, test_accuracy = 0.9836
+epoch 188 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1731, test_accuracy = 0.9836
+epoch 189 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1732, test_accuracy = 0.9836
+epoch 190 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1733, test_accuracy = 0.9836
+epoch 191 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1733, test_accuracy = 0.9836
+epoch 192 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1732, test_accuracy = 0.9836
+epoch 193 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1733, test_accuracy = 0.9836
+epoch 194 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1735, test_accuracy = 0.9836
+epoch 195 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1734, test_accuracy = 0.9836
+epoch 196 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1736, test_accuracy = 0.9836
+epoch 197 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1737, test_accuracy = 0.9836
+epoch 198 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1737, test_accuracy = 0.9837
+epoch 199 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1738, test_accuracy = 0.9836
+epoch 200 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1738, test_accuracy = 0.9836
+epoch 201 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1739, test_accuracy = 0.9836
+epoch 202 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1739, test_accuracy = 0.9836
+epoch 203 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1739, test_accuracy = 0.9836
+epoch 204 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1740, test_accuracy = 0.9836
+epoch 205 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1740, test_accuracy = 0.9836
+epoch 206 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1740, test_accuracy = 0.9836
+epoch 207 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1740, test_accuracy = 0.9836
+epoch 208 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1741, test_accuracy = 0.9836
+epoch 209 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1741, test_accuracy = 0.9836
+epoch 210 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1741, test_accuracy = 0.9836
+epoch 211 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1741, test_accuracy = 0.9836
+epoch 212 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1741, test_accuracy = 0.9836
+epoch 213 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1742, test_accuracy = 0.9836
+epoch 214 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1742, test_accuracy = 0.9836
+epoch 215 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1743, test_accuracy = 0.9837
+epoch 216 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1742, test_accuracy = 0.9837
+epoch 217 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1743, test_accuracy = 0.9836
+epoch 218 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1743, test_accuracy = 0.9837
+epoch 219 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1744, test_accuracy = 0.9836
+epoch 220 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1744, test_accuracy = 0.9836
+epoch 221 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1744, test_accuracy = 0.9837
+epoch 222 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1744, test_accuracy = 0.9836
+epoch 223 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1744, test_accuracy = 0.9836
+epoch 224 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1744, test_accuracy = 0.9836
+epoch 225 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1744, test_accuracy = 0.9836
+epoch 226 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1744, test_accuracy = 0.9836
+epoch 227 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1745, test_accuracy = 0.9836
+epoch 228 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1745, test_accuracy = 0.9837
+epoch 229 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1745, test_accuracy = 0.9837
+epoch 230 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1745, test_accuracy = 0.9837
+epoch 231 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1745, test_accuracy = 0.9837
+epoch 232 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1745, test_accuracy = 0.9836
+epoch 233 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1746, test_accuracy = 0.9837
+epoch 234 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1746, test_accuracy = 0.9837
+epoch 235 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1746, test_accuracy = 0.9837
+epoch 236 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1746, test_accuracy = 0.9837
+epoch 237 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1746, test_accuracy = 0.9837
+epoch 238 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1746, test_accuracy = 0.9837
+epoch 239 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 240 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9836
+epoch 241 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9836
+epoch 242 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 243 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 244 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 245 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 246 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 247 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 248 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 249 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 250 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1747, test_accuracy = 0.9837
+epoch 251 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 252 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 253 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 254 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 255 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 256 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 257 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 258 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 259 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 260 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 261 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 262 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 263 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 264 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 265 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 266 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 267 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 268 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 269 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 270 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 271 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1748, test_accuracy = 0.9837
+epoch 272 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 273 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 274 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 275 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 276 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 277 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 278 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 279 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 280 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 281 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 282 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 283 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 284 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 285 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 286 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 287 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 288 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 289 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 290 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 291 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 292 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 293 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 294 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 295 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 296 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 297 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 298 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 299 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837
+epoch 300 of 300: training_loss = 0.0000, training_accuracy = 1.0000, test_loss = 0.1749, test_accuracy = 0.9837

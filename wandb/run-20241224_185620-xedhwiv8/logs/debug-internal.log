@@ -1,0 +1,17 @@
+{"time":"2024-12-24T18:56:20.411284-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T18:56:20.411307-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241224_185620-xedhwiv8/logs/debug-core.log"}
+{"time":"2024-12-24T18:56:20.521268-08:00","level":"INFO","msg":"created new stream","id":"xedhwiv8"}
+{"time":"2024-12-24T18:56:20.521315-08:00","level":"INFO","msg":"stream: started","id":"xedhwiv8"}
+{"time":"2024-12-24T18:56:20.52134-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"xedhwiv8"}
+{"time":"2024-12-24T18:56:20.52134-08:00","level":"INFO","msg":"sender: started","stream_id":"xedhwiv8"}
+{"time":"2024-12-24T18:56:20.52136-08:00","level":"INFO","msg":"handler: started","stream_id":"xedhwiv8"}
+{"time":"2024-12-24T18:56:21.01175-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T18:57:44.581234-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-24T18:57:44.581742-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-24T18:57:45.280122-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-24T18:57:45.524348-08:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-12-24T18:57:46.548572-08:00","level":"INFO","msg":"stream: closing","id":"xedhwiv8"}
+{"time":"2024-12-24T18:57:46.548602-08:00","level":"INFO","msg":"handler: closed","stream_id":"xedhwiv8"}
+{"time":"2024-12-24T18:57:46.548613-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xedhwiv8"}
+{"time":"2024-12-24T18:57:46.548639-08:00","level":"INFO","msg":"sender: closed","stream_id":"xedhwiv8"}
+{"time":"2024-12-24T18:57:46.548751-08:00","level":"INFO","msg":"stream: closed","id":"xedhwiv8"}

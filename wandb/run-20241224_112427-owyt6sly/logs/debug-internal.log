@@ -1,0 +1,27 @@
+{"time":"2024-12-24T11:24:27.647994-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T11:24:27.648034-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241224_112427-owyt6sly/logs/debug-core.log"}
+{"time":"2024-12-24T11:24:27.758918-08:00","level":"INFO","msg":"created new stream","id":"owyt6sly"}
+{"time":"2024-12-24T11:24:27.758961-08:00","level":"INFO","msg":"stream: started","id":"owyt6sly"}
+{"time":"2024-12-24T11:24:27.758971-08:00","level":"INFO","msg":"handler: started","stream_id":"owyt6sly"}
+{"time":"2024-12-24T11:24:27.758972-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"owyt6sly"}
+{"time":"2024-12-24T11:24:27.759005-08:00","level":"INFO","msg":"sender: started","stream_id":"owyt6sly"}
+{"time":"2024-12-24T11:24:28.250899-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T11:24:28.348809-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:24:28.362226-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T11:24:28.36384-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:24:28.377416-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T11:24:28.395654-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:24:28.410418-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T11:24:28.414021-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:24:28.428227-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T11:24:28.429914-08:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T11:24:28.443804-08:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T12:02:36.425149-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-24T12:02:36.425622-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-24T12:02:37.357215-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-24T12:02:37.428865-08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 498-499, summary, console lines 643-644","runtime_seconds":0.070708834}],"total_operations":1}}
+{"time":"2024-12-24T12:02:38.65599-08:00","level":"INFO","msg":"stream: closing","id":"owyt6sly"}
+{"time":"2024-12-24T12:02:38.65602-08:00","level":"INFO","msg":"handler: closed","stream_id":"owyt6sly"}
+{"time":"2024-12-24T12:02:38.656034-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"owyt6sly"}
+{"time":"2024-12-24T12:02:38.656058-08:00","level":"INFO","msg":"sender: closed","stream_id":"owyt6sly"}
+{"time":"2024-12-24T12:02:38.656209-08:00","level":"INFO","msg":"stream: closed","id":"owyt6sly"}

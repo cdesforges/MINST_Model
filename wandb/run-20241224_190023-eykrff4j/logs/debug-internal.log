@@ -1,0 +1,17 @@
+{"time":"2024-12-24T19:00:23.971878-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T19:00:23.971906-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241224_190023-eykrff4j/logs/debug-core.log"}
+{"time":"2024-12-24T19:00:24.080809-08:00","level":"INFO","msg":"created new stream","id":"eykrff4j"}
+{"time":"2024-12-24T19:00:24.080861-08:00","level":"INFO","msg":"stream: started","id":"eykrff4j"}
+{"time":"2024-12-24T19:00:24.080859-08:00","level":"INFO","msg":"handler: started","stream_id":"eykrff4j"}
+{"time":"2024-12-24T19:00:24.080869-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"eykrff4j"}
+{"time":"2024-12-24T19:00:24.08088-08:00","level":"INFO","msg":"sender: started","stream_id":"eykrff4j"}
+{"time":"2024-12-24T19:00:24.460773-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T19:05:22.362835-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-24T19:05:22.363261-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-24T19:05:23.11887-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-24T19:05:23.370267-08:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-12-24T19:05:24.397163-08:00","level":"INFO","msg":"stream: closing","id":"eykrff4j"}
+{"time":"2024-12-24T19:05:24.397195-08:00","level":"INFO","msg":"handler: closed","stream_id":"eykrff4j"}
+{"time":"2024-12-24T19:05:24.397213-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"eykrff4j"}
+{"time":"2024-12-24T19:05:24.397224-08:00","level":"INFO","msg":"sender: closed","stream_id":"eykrff4j"}
+{"time":"2024-12-24T19:05:24.397422-08:00","level":"INFO","msg":"stream: closed","id":"eykrff4j"}

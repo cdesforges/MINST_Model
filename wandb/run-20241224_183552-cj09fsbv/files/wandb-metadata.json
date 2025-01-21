@@ -1,0 +1,12 @@
+{
+  "os": "macOS-15.1.1-arm64-arm-64bit",
+  "python": "CPython 3.9.6",
+  "startedAt": "2024-12-25T02:35:52.125682Z",
+  "program": "MINST_Model.ipynb",
+  "codePath": "MINST_Model.ipynb",
+  "email": "cdesforgescine@gmail.com",
+  "root": "/Users/cdesforges/PycharmProjects/MINST_Model",
+  "host": "Chandlers-MacBook-Pro.local",
+  "executable": "/Users/cdesforges/PycharmProjects/MINST_Model/.venv/bin/python",
+  "codePathLocal": "MINST_Model.ipynb"
+}

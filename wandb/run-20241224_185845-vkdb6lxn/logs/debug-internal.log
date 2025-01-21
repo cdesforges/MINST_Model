@@ -1,0 +1,17 @@
+{"time":"2024-12-24T18:58:45.073989-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T18:58:45.074021-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241224_185845-vkdb6lxn/logs/debug-core.log"}
+{"time":"2024-12-24T18:58:45.183025-08:00","level":"INFO","msg":"created new stream","id":"vkdb6lxn"}
+{"time":"2024-12-24T18:58:45.183072-08:00","level":"INFO","msg":"stream: started","id":"vkdb6lxn"}
+{"time":"2024-12-24T18:58:45.183088-08:00","level":"INFO","msg":"handler: started","stream_id":"vkdb6lxn"}
+{"time":"2024-12-24T18:58:45.183103-08:00","level":"INFO","msg":"sender: started","stream_id":"vkdb6lxn"}
+{"time":"2024-12-24T18:58:45.183118-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"vkdb6lxn"}
+{"time":"2024-12-24T18:58:45.485193-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T19:00:04.95194-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-24T19:00:04.952407-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-24T19:00:05.585733-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-24T19:00:05.861211-08:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-12-24T19:00:06.883451-08:00","level":"INFO","msg":"stream: closing","id":"vkdb6lxn"}
+{"time":"2024-12-24T19:00:06.883479-08:00","level":"INFO","msg":"handler: closed","stream_id":"vkdb6lxn"}
+{"time":"2024-12-24T19:00:06.883493-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vkdb6lxn"}
+{"time":"2024-12-24T19:00:06.88351-08:00","level":"INFO","msg":"sender: closed","stream_id":"vkdb6lxn"}
+{"time":"2024-12-24T19:00:06.883644-08:00","level":"INFO","msg":"stream: closed","id":"vkdb6lxn"}

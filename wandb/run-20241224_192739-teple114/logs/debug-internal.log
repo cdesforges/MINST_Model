@@ -1,0 +1,17 @@
+{"time":"2024-12-24T19:27:39.492452-08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T19:27:39.49247-08:00","level":"INFO","msg":"created symlink","path":"/Users/cdesforges/PycharmProjects/MINST_Model/wandb/run-20241224_192739-teple114/logs/debug-core.log"}
+{"time":"2024-12-24T19:27:39.603492-08:00","level":"INFO","msg":"created new stream","id":"teple114"}
+{"time":"2024-12-24T19:27:39.603543-08:00","level":"INFO","msg":"stream: started","id":"teple114"}
+{"time":"2024-12-24T19:27:39.603565-08:00","level":"INFO","msg":"sender: started","stream_id":"teple114"}
+{"time":"2024-12-24T19:27:39.603564-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"teple114"}
+{"time":"2024-12-24T19:27:39.603595-08:00","level":"INFO","msg":"handler: started","stream_id":"teple114"}
+{"time":"2024-12-24T19:27:40.120776-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T19:31:37.982952-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-24T19:31:37.98343-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-24T19:31:38.751384-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-24T19:31:38.988928-08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 44-45, summary, console lines 44-46","runtime_seconds":0.236576458}],"total_operations":1}}
+{"time":"2024-12-24T19:31:40.055519-08:00","level":"INFO","msg":"stream: closing","id":"teple114"}
+{"time":"2024-12-24T19:31:40.055545-08:00","level":"INFO","msg":"handler: closed","stream_id":"teple114"}
+{"time":"2024-12-24T19:31:40.055559-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"teple114"}
+{"time":"2024-12-24T19:31:40.055606-08:00","level":"INFO","msg":"sender: closed","stream_id":"teple114"}
+{"time":"2024-12-24T19:31:40.055758-08:00","level":"INFO","msg":"stream: closed","id":"teple114"}
