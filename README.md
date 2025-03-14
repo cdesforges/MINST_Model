@@ -1,4 +1,4 @@
-READ ME
+# Multilayer Perceptron in Pytorch
 
 This is my first MLP, trained on the MNIST dataset.
 
