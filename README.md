@@ -1,6 +1,6 @@
-# Multilayer Perceptron in Pytorch
+# Convulitional Neural Network in Pytorch
 
-This is my first MLP, trained on the MNIST dataset.
+This is my first CNN, trained on the MNIST dataset.
 
 This was my first time utlizing Pytorch, and fine tuning model architecture are a result of training runs.
 
